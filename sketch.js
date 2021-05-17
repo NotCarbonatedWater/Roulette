@@ -53,6 +53,6 @@ function keyReleased() {
   roulette(); 
 }
 
-function touchStarted() {
+function touchEnded() {
   roulette();
 }
