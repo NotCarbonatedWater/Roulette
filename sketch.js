@@ -12,8 +12,7 @@ function setup() {
 function roulette() {
   var num = int(random(0, 38 * 10));
   num = int (num / 10); 
-  let listBlacks = [10,29,8,31,6,33,4,35,2,28,26,11,20,17,22,15,21,13];
-  // let colour = ['red', 'blue'];
+  let listBlacks = [10,29,8,31,6,33,4,35,2,28,26,11,20,17,22,15,21,13,24];
   let colour;
   if (num == 0 || num == 37) {
     if (num == 37) {
