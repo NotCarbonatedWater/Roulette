@@ -1,3 +1,5 @@
+var touchReleasedBool = true;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255,192,203);
@@ -53,6 +55,14 @@ function keyReleased() {
   roulette(); 
 }
 
-function touchEnded() {
+function touchStarted() {
+  if (!touchReleasedBool) {
+    return; 
+  }
+  touchReleasedBool = false; 
   roulette();
+}
+function touchEnded() {
+  touchReleasedBool = true; 
+  return false; 
 }
