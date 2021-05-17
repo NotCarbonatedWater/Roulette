@@ -5,7 +5,7 @@ function setup() {
   textSize(25);
   fill(0);
   textAlign(CENTER);
-  text("Press any Key to Start", windowWidth/2, windowHeight / 2);
+  text("Press Any Key/Click/Touch To Start", windowWidth/2, windowHeight / 2);
 }
 function roulette() {
   var num = int(random(0, 38 * 10));
@@ -51,4 +51,8 @@ function draw() {
 
 function keyReleased() {
   roulette(); 
+}
+
+function touchStarted() {
+  roulette();
 }
