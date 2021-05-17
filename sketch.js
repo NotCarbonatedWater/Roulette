@@ -48,7 +48,6 @@ function roulette() {
 }
 
 function draw() {
-
 }
 
 function keyReleased() {
